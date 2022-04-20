@@ -126,7 +126,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="GpseOjZNfOdLddK8jewumK" Name="Bounds" Kind="InputPin" DefaultValue="1022, 23, 901, 592" />
+            <Pin Id="GpseOjZNfOdLddK8jewumK" Name="Bounds" Kind="InputPin" DefaultValue="978, 195, 901, 592" />
             <Pin Id="BpFNUbcAc1pMYX5uX6qBxg" Name="Input" Kind="InputPin" />
             <Pin Id="ImNeMqfWiTpNzaJB40hcI8" Name="Color" Kind="InputPin" />
             <Pin Id="Fv3KV9k7QxaQBdpR2GiXmH" Name="Clear" Kind="InputPin" />

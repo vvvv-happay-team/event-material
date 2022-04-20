@@ -1,0 +1,56 @@
+!SceneAsset
+Id: 92e45c4a-5000-4f23-84ec-0b206b058f01
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Parent: 88d7e465-cf70-49b7-92dc-3c8be625a306:MainScene
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 5b1a13bb-7a13-455d-bdd8-0df9230578ae
+        - ref!! c93a15ba-cf54-4c39-abce-6aae857a7423
+        - ref!! d85f21c4-4744-400d-ae0a-4e07c8b1d692
+    Parts:
+        -   Entity:
+                Id: 5b1a13bb-7a13-455d-bdd8-0df9230578ae
+                Name: Sphere
+                Components:
+                    5a2070486e60cea7d201d79735eb907b: !TransformComponent
+                        Id: ff2085bc-6367-45c9-a2c9-ccba5f5a28de
+                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ac58086a566807045810b9929c3c4163: !ModelComponent
+                        Id: 72e1863e-6f62-4c41-9e1b-d16c2fc58d19
+                        Model: 7d7cfafd-9108-4b3f-8e0e-5e49d9bde7f7:Sphere
+                        Materials: {}
+        -   Entity:
+                Id: c93a15ba-cf54-4c39-abce-6aae857a7423
+                Name: Ground
+                Components:
+                    6846b4af5f8bec039e0acbeb2ced24af: !TransformComponent
+                        Id: ef224252-b906-4a9a-87ca-814e3c02139c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    3f0fca4635ce3406419b718722ca7290: !ModelComponent
+                        Id: 69b42911-5698-4f28-a82c-92b995523414
+                        Model: c1ebae35-40e5-468e-b5dc-063d7429aafe:Ground
+                        Materials: {}
+        -   Entity:
+                Id: d85f21c4-4744-400d-ae0a-4e07c8b1d692
+                Name: Cube
+                Components:
+                    6ec89f929835bcbaac4144b88f8120a1: !TransformComponent
+                        Id: 3ab56168-1085-4c8b-82ef-116ad9f97d6f
+                        Position: {X: 1.2440662, Y: 0.51433134, Z: -3.6798816}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    debfbc5fbc4a858d8ff204d069f0d89e: !ModelComponent
+                        Id: 73c3abe8-75a7-4128-8dca-fe2717492d9d
+                        Model: fd47aaa6-c3fe-46f5-8f8c-8352ca48bd13:Cube
+                        Materials:
+                            6f8f549298c0c01fab5c78f03213f180~0: a5225b82-38fd-47b7-a7be-0a653cb1706a:CubeMaterial

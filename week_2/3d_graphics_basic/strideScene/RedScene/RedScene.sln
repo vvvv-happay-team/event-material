@@ -1,0 +1,11 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedScene.Windows", "RedScene.Windows\RedScene.Windows.csproj", "{FC958CAA-00CE-4456-BA3D-9AB95BA3104D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedScene", "RedScene\RedScene.csproj", "{B0335920-5B07-4F71-8907-F5AF0EE3A8BE}"
+EndProject
+Global
+EndGlobal
