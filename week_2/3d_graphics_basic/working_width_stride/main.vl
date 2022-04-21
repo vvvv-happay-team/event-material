@@ -30,7 +30,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
-            <Pin Id="GKrXg6roI3nMqtNQb6RN78" Name="Bounds" Kind="InputPin" DefaultValue="1087, 94, 786, 432" />
+            <Pin Id="GKrXg6roI3nMqtNQb6RN78" Name="Bounds" Kind="InputPin" DefaultValue="1084, 173, 786, 432" />
             <Pin Id="By2SI2M38dINNZnTXxctrh" Name="Input" Kind="InputPin" />
             <Pin Id="OLPPbyK6VZSPFiEEMN6XuO" Name="Camera" Kind="InputPin" />
             <Pin Id="HT2LXKVOKubP4CdfCcAVez" Name="Enable Default Camera" Kind="InputPin" />
@@ -45,7 +45,7 @@
             <Pin Id="FEzRnKAIZIsMEo4uHQ1crA" Name="Client Bounds" Kind="OutputPin" />
             <Pin Id="PezfvXjIizQNaGsb2OTn7n" Name="Input Source" Kind="OutputPin" />
           </Node>
-          <Node Bounds="402,240,165,19" Id="UWIiTBMYLrOPRJJ5ry3y2H">
+          <Node Bounds="362,166,165,19" Id="UWIiTBMYLrOPRJJ5ry3y2H">
             <p:NodeReference LastCategoryFullName="Stride.Assets" LastSymbolSource="VL.Stride.Assets.Windows.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LoadProject" />
@@ -63,12 +63,7 @@
             <Pin Id="TcCkNL1Z8UUPRlUyXIinv8" Name="Available Assets" Kind="OutputPin" />
             <Pin Id="SZvn0rbupJXM184am19lYb" Name="Changes" Kind="OutputPin" />
           </Node>
-          <Pad Id="VLUN6sAtKpSL0yIRSZrZdT" Comment="Project Path" Bounds="402,194,112,15" ShowValueBox="true" isIOBox="true" Value="..\strideScene\RedScene\RedScene\RedScene.csproj">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Path" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="PQ0FbUxdqoGM3KYYbSwAut" Comment="Content URLs" Bounds="484,305,128,117" ShowValueBox="true" isIOBox="true">
+          <Pad Id="PQ0FbUxdqoGM3KYYbSwAut" Comment="Content URLs" Bounds="443,231,128,117" ShowValueBox="true" isIOBox="true">
             <p:Value>
               <Item></Item>
             </p:Value>
@@ -274,6 +269,35 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
+          <Node Bounds="362,-16,87,19" Id="I19T9b71ae3L4c1clgjVlB">
+            <p:NodeReference LastCategoryFullName="System.Application" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ApplicationPath" />
+            </p:NodeReference>
+            <Pin Id="NV6bH9aPwTqLFULG4uFvVS" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="362,56,25,19" Id="RrWi4UQEn25O6ic9RKD4Er">
+            <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="+" />
+            </p:NodeReference>
+            <Pin Id="RiZMPevvmFHM4PorekoEwc" Name="Input" Kind="InputPin" />
+            <Pin Id="DtH2jxse3pQNaSIPITNXMY" Name="Input 2" Kind="InputPin" />
+            <Pin Id="HwUB17rLdt3NLRWOsnxXc7" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="GBfjfw2FL0RNNjV3HHkD9L" Comment="" Bounds="410,26,251,15" ShowValueBox="true" isIOBox="true" Value="strideScene\RedScene\RedScene\RedScene.csproj">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="362,99,48,19" Id="TfyAQUlI8LaMi8WnjLgO5S">
+            <p:NodeReference LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ToPath" />
+            </p:NodeReference>
+            <Pin Id="VbJ2KaXuGgrOeyI4Wm08Z9" Name="Input" Kind="InputPin" />
+            <Pin Id="NtZnHpqEnIZPKSUDJRxfke" Name="Result" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="K2yCCO5KloJNDcW3JaWmXx" Name="Create" />
         <Patch Id="EzyeqFds46TOpp3L2mVjFP" Name="Update" />
@@ -282,7 +306,6 @@
           <Fragment Id="Tj5zZ16RSb5Og7w77H6TXj" Patch="EzyeqFds46TOpp3L2mVjFP" Enabled="true" />
         </ProcessDefinition>
         <Link Id="RanxOgy2emtNbNz9295gNP" Ids="OtIg3gbnijHLlpwIeqt2Nr,By2SI2M38dINNZnTXxctrh" />
-        <Link Id="PBSW8jgHbrNPfbfUxZFcYc" Ids="VLUN6sAtKpSL0yIRSZrZdT,DSfjHrYj6hUPHfFslXHWkB" />
         <Link Id="REAla8ogePoM6uEk7zsQ6C" Ids="LkGH8mGrUuTNqgWO942joS,PQ0FbUxdqoGM3KYYbSwAut" />
         <Link Id="TmTNwnh6EiXLdNqgRGyW2R" Ids="B2QaF4X2QERMtghgpgPPFn,QUsG7mWJMEFQANj4KDZNDU" />
         <Link Id="LCRYkg8LsdsN5ukFmQLy6K" Ids="GkAIFXa9RYeMBETCk5k9Ad,CoyyYJxrxYfMCI29Qyn8TB" />
@@ -305,6 +328,10 @@
         <Link Id="UGFPaXEoaoOLbmaD5acL47" Ids="HHdlQsiYvdhLWHEjkmNdRW,UheVg98DmhsNOkCchiU1eD" />
         <Link Id="S2uvPOJ0LG7OFJjLUOTXkR" Ids="VMzYknDG6qMMfjShLXlwmc,IEzSTlgkyCDPkTG2gnDib0" />
         <Link Id="TiaHXjTOkAaLuqdKR9SLGr" Ids="Vog1tYp1WFYL6ZDlRtIGPC,H4EqbRfapovMMLKlgVKZx1" />
+        <Link Id="HKuvkcxc8M8MAziHQ3XxkC" Ids="NV6bH9aPwTqLFULG4uFvVS,RiZMPevvmFHM4PorekoEwc" />
+        <Link Id="Aws7xOZxJQ4OqWGn4RhYGN" Ids="GBfjfw2FL0RNNjV3HHkD9L,DtH2jxse3pQNaSIPITNXMY" />
+        <Link Id="NIDW9clHLRtOPmQtJeOdHU" Ids="HwUB17rLdt3NLRWOsnxXc7,VbJ2KaXuGgrOeyI4Wm08Z9" />
+        <Link Id="PJRCeZu4mdjP62pQ6bBL7d" Ids="NtZnHpqEnIZPKSUDJRxfke,DSfjHrYj6hUPHfFslXHWkB" />
       </Patch>
     </Node>
   </Patch>
