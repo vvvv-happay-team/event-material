@@ -1,0 +1,25 @@
+shader MeshWave_DrawFX : VS_PS_Base, Texturing
+{
+
+    [Color]
+    float4 Color = float4(1, 0, 0, 1);
+
+    float2 amplitude = float2(1,1);
+    float2 frequency = float2(1,1);
+    float2 phase = float2(0,0);
+
+    Texture2D MeshTexture;  
+
+
+    override stage void VSMain()
+    {
+        streams.Position.z = sin(streams.Position.x * frequency.x + phase.x ) * amplitude.x + sin(streams.Position.y * frequency.y + phase.y ) * amplitude.y;
+        streams.ShadingPosition = mul(streams.Position, WorldViewProjection);
+    }
+
+    override stage void PSMain() 
+    {
+        float4 myColor = MeshTexture.SampleLevel(Sampler,streams.TexCoord, 0);
+        streams.ColorTarget = myColor;
+    }
+};

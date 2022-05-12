@@ -1,0 +1,22 @@
+[Summary("Multiplies the inputs.")]
+shader ChangeShape_ShaderFX : ComputeFloat4
+{
+    compose ComputeFloat4 ShaderInput;
+
+    cbuffer PerMaterial
+    {
+        [Summary("I could be a composition input.")]
+        stage float amplitude = 1;
+        stage float frequency = 1;
+        stage float phase = 0;
+    }
+
+    override float4 Compute()
+    {
+        float4 result = ShaderInput.Compute();
+
+        result.z += sin(result.x * frequency + phase) * amplitude + sin(result.y * 0.7 * frequency + phase *3) * amplitude;
+
+        return result;
+    }
+};
